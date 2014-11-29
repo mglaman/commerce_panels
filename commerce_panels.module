@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * module file for Commerce Panels
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function commerce_panels_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'ctools' && $plugin == 'content_types') {
+    return 'content_types';
+  }
+  elseif ($module == 'page_manager' && $plugin == 'tasks') {
+    return 'tasks';
+  }
+  return null;
+}

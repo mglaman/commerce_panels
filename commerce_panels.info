@@ -1,0 +1,7 @@
+name = Commerce Panels
+description = Panels integration for Drupal Commerce
+core = 7.x
+
+dependencies[] = ctools
+dependencies[] = panels
+dependencies[] = commerce
